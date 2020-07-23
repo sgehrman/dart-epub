@@ -3,16 +3,26 @@ version: 2.1.0
 author: Colin Nelson <colin@orthros.dev>
 description: Epub Parser for Dart. Suitable for use on the Server, the Web, or in Flutter
 homepage: https://github.com/orthros/dart-epub
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
 environment:
   sdk: ">=2.0.0 <3.0.0"
 dependencies:
-  async: ">=1.8.0 <3.0.0"
-  archive: "^2.0.0"
-  quiver: ">=2.0.0 <3.0.0"
-  xml: ">=2.6.0 <4.0.0"
-  image: ">=1.1.33 <3.0.0"
-  dart2_constant: ^1.0.1
+  flutter:
+    sdk: flutter
+
+  async: ^2.4.2
+  archive: ^2.0.13
+  quiver: ^2.1.3
+  xml: ^4.2.0
+  image: ^2.1.14
+  dart2_constant: ^1.0.2+dart2
 dev_dependencies:
-  test: "^1.0.0"
-  path: "^1.5.1"
-  pedantic: "^1.8.0"
+  test: ^1.15.3
+  path: ^1.7.0
+
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
